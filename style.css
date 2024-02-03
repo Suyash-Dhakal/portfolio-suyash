@@ -384,6 +384,10 @@ nav .fa-solid{
    .copyright{
     font-size: 14px;
    }
+   .services-list div:active{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
 }
 #msg{
     color: #61b752;
