@@ -20,15 +20,32 @@ body{
     background-position: center;
     
 }
+
 .container{
     padding: 10px 10%;
 }
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* below makes the nav bar fixed */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure it aligns to the left edge of the viewport */
+    right: 0; /* Ensure it aligns to the right edge of the viewport */
+    width: 100%;
+    z-index: 1000; /* Keeps nav on top */
+    background-color: #262626; /* Or any desired color */
+  }
+  /* below is done to make the SUYASH align with other content */
+  nav .nav-name{
+    padding-left: 10%;
+  }
+  
 .nav-name{
     font-weight: bolder;
     font-size: 3rem;
@@ -75,6 +92,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+
 
 /* --------------------------------------ABOUT-------------------------------------- */
 
